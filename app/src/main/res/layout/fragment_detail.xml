@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/container"
+    tools:context="com.example.sahana.myapplication.DetailActivity.DetailFragment"
+    android:background="#ff112b9d">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/earthcopy"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView android:text="hello" android:id="@+id/CountryID" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:capitalize="words"
+        android:textSize="25dp"
+        android:textColor="#fff0dd17"
+        android:textStyle="normal|italic" />
+    <TextView android:text="hello" android:id="@+id/Countrycode" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal|italic"
+        android:textSize="25dp"
+        android:textColor="#fff0dd17"
+        android:layout_below="@+id/CountryID"
+        android:layout_alignParentStart="true" />
+
+    <TextView android:text="hello" android:id="@+id/Continent" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff0dd17"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/Countrycode"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|italic" />
+
+    <TextView android:text="hello" android:id="@+id/phonecode" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false"
+        android:textSize="25dp"
+        android:textColor="#fff0dd17"
+        android:layout_below="@+id/Continent"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|italic" />
+    <TextView android:text="hello" android:id="@+id/currency" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff0dd17"
+        android:textSize="25dp"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/phonecode"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|italic" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify Contact Number"
+        android:id="@+id/button"
+        android:onClick="OnClick"
+        android:textColor="#fffffded"
+        android:background="#ff21808c"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|italic" />
+
+
+
+</RelativeLayout>
